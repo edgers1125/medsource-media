@@ -5,7 +5,7 @@
 | Date | Oct 11, 2026 |
 | Type | Social post |
 | Branch | Sta. Lucia Mall |
-| Status | Draft in Metricool, awaiting approval |
+| Status | Scheduled in Metricool |
 | Design | [Open canvas](https://claude.ai/artifact/LTP9DANS2EkUbx9suXhHsM) |
 
 Devices and equipment: BP kit, glucose monitor, wheelchairs. Part of the October 2026 publication plan (week 1, no promos).
@@ -14,9 +14,9 @@ Devices and equipment: BP kit, glucose monitor, wheelchairs. Part of the October
 
 | Platform | When | Status |
 | --- | --- | --- |
-| [Facebook feed](https://app.metricool.com/planner/calendar?blogId=7293138&openWithPostUuid=-2875408148790163223) | Sun Oct 11, 10:00 AM | Draft in Metricool, awaiting approval |
-| [Instagram feed](https://app.metricool.com/planner/calendar?blogId=7293138&openWithPostUuid=-8415786708269052392) | Sun Oct 11, 7:00 PM | Draft in Metricool, awaiting approval |
-| [FB + IG story](https://app.metricool.com/planner/calendar?blogId=7293138&openWithPostUuid=-3742105303721228995) | Sun Oct 11, 7:30 PM | Draft in Metricool, awaiting approval |
+| [Facebook feed](https://app.metricool.com/planner/calendar?blogId=7293138&openWithPostUuid=-2875408148790163223) | Sun Oct 11, 10:00 AM | Scheduled in Metricool |
+| [Instagram feed](https://app.metricool.com/planner/calendar?blogId=7293138&openWithPostUuid=-8415786708269052392) | Sun Oct 11, 7:00 PM | Scheduled in Metricool |
+| [FB + IG story](https://app.metricool.com/planner/calendar?blogId=7293138&openWithPostUuid=-3742105303721228995) | Sun Oct 11, 7:30 PM | Scheduled in Metricool |
 
 Times: Facebook 10 AM is the peak in Metricool's best-time data. Instagram had no data, so 7 PM is a default.
 
