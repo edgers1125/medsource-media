@@ -5,14 +5,20 @@
 | Date | Oct 9, 2026 |
 | Type | Social post |
 | Branch | Sta. Lucia Mall |
-| Status | Queued in Metricool for review |
+| Status | Draft in Metricool, awaiting approval |
 | Design | [Open canvas](https://claude.ai/artifact/LTP9DANS2EkUbx9suXhHsM) |
 
 Who we are: wholesaler, retailer and importer. Part of the October 2026 publication plan (week 1, no promos).
 
 ## Schedule
 
-SCHEDULE_TABLE
+| Platform | When | Status |
+| --- | --- | --- |
+| [Facebook feed](https://app.metricool.com/planner/calendar?blogId=7293138&openWithPostUuid=4892572159749735714) | Fri Oct 9, 10:00 AM | Draft in Metricool, awaiting approval |
+| [Instagram feed](https://app.metricool.com/planner/calendar?blogId=7293138&openWithPostUuid=2127094343156122419) | Fri Oct 9, 7:00 PM | Draft in Metricool, awaiting approval |
+| [FB + IG story](https://app.metricool.com/planner/calendar?blogId=7293138&openWithPostUuid=3007639315055594877) | Fri Oct 9, 7:30 PM | Draft in Metricool, awaiting approval |
+
+Times: Facebook 10 AM is the peak in Metricool's best-time data. Instagram had no data, so 7 PM is a default.
 
 ## Images
 
