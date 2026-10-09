@@ -8,7 +8,7 @@
 | Status | Draft |
 | Design | Built from the MedSource Design System (MedSource World logo, Poppins). Source: [source.html](source.html) |
 
-Marked as the legal government letterhead template. Based on the old letterhead (diagonal navy and green corners, logo with tagline, split navy and green line). Tagline: Sourcing the Future of Healthcare.
+Marked as the legal government letterhead template. Old letterhead used as basis only (logo with tagline, address with pin). Look follows the design system: straight forest and navy bands with brand-green stripes. Tagline: Sourcing the Future of Healthcare.
 
 ## Files
 
