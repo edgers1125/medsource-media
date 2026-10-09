@@ -7,66 +7,65 @@
 @font-face{font-family:"Poppins";font-weight:400;src:url("assets/Poppins-Regular.ttf")}
 @font-face{font-family:"Poppins";font-weight:500;src:url("assets/Poppins-Medium.ttf")}
 @font-face{font-family:"Poppins";font-weight:700;src:url("assets/Poppins-Bold.ttf")}
-:root{--forest:#445C44;--green:#7AB537;--navy:#033F75;--white:#FFFFFF}
+:root{--forest:#445C44;--green:#7AB537;--navy:#033F75;--slate:#5A6470;--white:#FFFFFF}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#888;font-family:"Poppins",sans-serif;display:flex;flex-direction:column;gap:40px;padding:40px;width:2560px}
 .piece{position:relative;width:2480px;background:var(--white);overflow:hidden}
 .band{position:absolute;left:0;width:2480px}
-.tag{position:absolute;white-space:nowrap;font-weight:500;color:var(--navy)}
+.tag{position:absolute;white-space:nowrap;font-weight:400;color:var(--forest);letter-spacing:.04em}
 
 /* First page header 2480 x 500 */
 #h1{height:500px}
-#h1 .logo{position:absolute;left:177px;top:140px;height:190px}
-#h1 .tag{left:177px;top:330px;font-size:46px;line-height:60px}
-#h1 .addr{position:absolute;right:177px;top:150px;height:190px;display:flex;align-items:center;gap:36px}
-#h1 .addr .txt{font-size:46px;line-height:66px;font-weight:500;color:var(--navy);text-align:right}
-#h1 .addr .txt b{font-weight:700}
-#h1 .pin{width:84px;height:84px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;flex:none}
+#h1 .logo{position:absolute;left:177px;top:128px;height:176px}
+#h1 .tag{left:177px;top:322px;font-size:38px;line-height:52px}
+#h1 .addr{position:absolute;right:177px;top:150px;height:150px;display:flex;align-items:center;gap:32px}
+#h1 .addr .txt{font-size:40px;line-height:58px;font-weight:400;color:var(--navy);text-align:right;letter-spacing:.01em}
+#h1 .addr .txt b{font-weight:600;font-family:"Poppins";font-weight:700}
+#h1 .addr .rule{width:5px;height:140px;background:var(--green)}
+#h1 .pin{width:64px;height:64px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;flex:none}
 
-/* Later pages header 2480 x 500, smaller, no address */
+/* Later pages header 2480 x 500 */
 #h2{height:500px}
-#h2 .logo{position:absolute;left:177px;top:112px;height:150px}
-#h2 .tag{left:177px;top:258px;font-size:36px;line-height:48px}
+#h2 .logo{position:absolute;left:177px;top:98px;height:136px}
+#h2 .tag{left:177px;top:240px;font-size:30px;line-height:42px}
 
 /* Footer 2480 x 250 */
 #f{height:250px}
-#f .left{position:absolute;left:177px;top:14px;height:236px;display:flex;flex-direction:column;justify-content:center;color:#fff}
-#f .left .a{font-size:50px;line-height:66px;font-weight:700;letter-spacing:.02em}
-#f .left .b{font-size:36px;line-height:52px;font-weight:400}
-#f .right{position:absolute;right:177px;top:14px;height:236px;display:flex;align-items:center;color:#fff}
-#f .right .lbl{font-size:30px;line-height:40px;font-weight:500;letter-spacing:.14em;text-align:right;color:var(--green)}
-#f .right .num{font-size:64px;line-height:76px;font-weight:700;text-align:right}
+#f .t{position:absolute;top:92px;font-size:34px;line-height:48px;letter-spacing:.06em}
+#f .l{left:177px;color:var(--slate);font-weight:400}
+#f .r{right:177px;color:var(--navy);font-weight:700;letter-spacing:.14em}
 </style>
 </head>
 <body>
 
 <div class="piece" id="h1">
-  <div class="band" style="top:0;height:72px;background:var(--forest)"></div>
-  <div class="band" style="top:72px;height:14px;background:var(--green)"></div>
+  <div class="band" style="top:0;height:40px;background:var(--forest)"></div>
+  <div class="band" style="top:40px;height:6px;background:var(--green)"></div>
   <img class="logo" src="assets/medsource-world.svg" alt="MedSource World">
   <div class="tag">Sourcing the Future of Healthcare</div>
   <div class="addr">
     <div class="txt"><b>209 Riverside Drive</b><br>Provident Village<br>Marikina City, Philippines</div>
-    <div class="pin"><svg width="46" height="46" viewBox="0 0 24 24"><path fill="#fff" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
+    <div class="rule"></div>
+    <div class="pin"><svg width="34" height="34" viewBox="0 0 24 24"><path fill="#fff" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
   </div>
-  <div class="band" style="top:440px;height:12px;background:var(--green)"></div>
-  <div class="band" style="top:452px;height:48px;background:var(--navy)"></div>
+  <div class="band" style="top:442px;height:6px;background:var(--green)"></div>
+  <div class="band" style="top:448px;height:20px;background:var(--navy)"></div>
 </div>
 
 <div class="piece" id="h2">
-  <div class="band" style="top:0;height:48px;background:var(--forest)"></div>
-  <div class="band" style="top:48px;height:10px;background:var(--green)"></div>
+  <div class="band" style="top:0;height:30px;background:var(--forest)"></div>
+  <div class="band" style="top:30px;height:5px;background:var(--green)"></div>
   <img class="logo" src="assets/medsource-world.svg" alt="MedSource World">
   <div class="tag">Sourcing the Future of Healthcare</div>
-  <div class="band" style="top:330px;height:9px;background:var(--green)"></div>
-  <div class="band" style="top:339px;height:32px;background:var(--navy)"></div>
+  <div class="band" style="top:296px;height:5px;background:var(--green)"></div>
+  <div class="band" style="top:301px;height:14px;background:var(--navy)"></div>
 </div>
 
 <div class="piece" id="f">
-  <div class="band" style="top:0;height:14px;background:var(--green)"></div>
-  <div class="band" style="top:14px;height:236px;background:var(--navy)"></div>
-  <div class="left"><div class="a">MEDSOURCE WORLD</div><div class="b">Importation · Procurement · Distribution</div></div>
-  <div class="right"><div><div class="lbl">CALL / TEXT</div><div class="num">0967 325 3555</div></div></div>
+  <div class="t l">IMPORTATION  ·  PROCUREMENT  ·  DISTRIBUTION</div>
+  <div class="t r">MEDSOURCE WORLD</div>
+  <div class="band" style="top:196px;height:6px;background:var(--green)"></div>
+  <div class="band" style="top:202px;height:48px;background:var(--navy)"></div>
 </div>
 
 </body>
