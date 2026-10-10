@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MedSource DSWD Tarpaulin 60x24 in</title>
+<style>
+  @font-face { font-family: "Poppins"; font-weight: 400; src: url("../../brand/fonts/poppins/Poppins-Regular.ttf"); }
+  @font-face { font-family: "Poppins"; font-weight: 500; src: url("../../brand/fonts/poppins/Poppins-Medium.ttf"); }
+  @font-face { font-family: "Poppins"; font-weight: 700; src: url("../../brand/fonts/poppins/Poppins-Bold.ttf"); }
+
+  /* 60 x 24 in at 96 px per inch = 5760 x 2304 px */
+  @page { size: 60in 24in; margin: 0; }
+  :root {
+    --forest: #445C44; --navy: #033F75; --navy-deep: #022A4F;
+    --green: #7AB537; --tint: #E9EFE6; --ink: #1B161F; --slate: #5A6470;
+    --mx: 288px;   /* 3 in side safe margin (5%) */
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 5760px; height: 2304px; background: #fff; font-family: "Poppins", sans-serif; color: var(--ink); overflow: hidden; }
+  .tarp { position: relative; width: 5760px; height: 2304px; }
+  .band { position: absolute; left: 0; width: 5760px; }
+
+  /* bands */
+  .top    { top: 0;    height: 470px;  background: #fff; }
+  .hero   { top: 470px; height: 900px; background: var(--forest); }
+  .stripe1{ top: 1370px; height: 35px; background: var(--green); }
+  .steps  { top: 1405px; height: 330px; background: #fff; }
+  .stripe2{ top: 1735px; height: 35px; background: var(--green); }
+  .foot   { top: 1770px; height: 534px; background: var(--navy); }
+
+  /* top */
+  .logo { position: absolute; left: var(--mx); top: 115px; height: 240px; width: auto; }
+  .branch { position: absolute; right: var(--mx); top: 0; height: 470px; display: flex; flex-direction: column; justify-content: center; align-items: flex-end; text-align: right; }
+  .branch .kicker { font-weight: 500; font-size: 56px; letter-spacing: .14em; color: var(--slate); text-transform: uppercase; }
+  .branch .name { font-weight: 700; font-size: 124px; line-height: 1.1; color: var(--navy); white-space: nowrap; }
+  .branch .name2 { color: var(--forest); }
+
+  /* hero */
+  .hero-left { position: absolute; left: var(--mx); top: 0; height: 900px; width: 3300px; display: flex; flex-direction: column; justify-content: center; }
+  .pill { align-self: flex-start; height: 150px; padding: 0 64px; border-radius: 9999px; background: var(--green); color: #fff; font-weight: 700; font-size: 96px; letter-spacing: .04em; text-transform: uppercase; display: flex; align-items: center; margin-bottom: 40px; }
+  .title { color: #fff; font-weight: 700; font-size: 290px; line-height: 1.0; letter-spacing: -.01em; }
+
+  .hero-right { position: absolute; left: 3640px; top: 0; width: 1832px; height: 900px; display: flex; flex-direction: column; justify-content: center; }
+  .ask { color: #fff; font-weight: 400; font-size: 76px; line-height: 1.25; margin-bottom: 36px; }
+  .cta { height: 150px; border-radius: 16px; background: var(--green); color: var(--navy-deep); font-weight: 700; font-size: 84px; letter-spacing: .02em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; margin-bottom: 36px; }
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .tile { height: 150px; border-radius: 16px; background: var(--navy); color: #fff; font-weight: 700; font-size: 58px; letter-spacing: .03em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; }
+
+  /* steps */
+  .steps-label { position: absolute; left: var(--mx); top: 0; height: 330px; display: flex; align-items: center; color: var(--navy); font-weight: 700; font-size: 78px; letter-spacing: .08em; line-height: 1.15; text-transform: uppercase; }
+  .step-row { position: absolute; left: 1250px; right: var(--mx); top: 40px; height: 250px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; }
+  .step { background: var(--tint); border-radius: 32px; display: flex; align-items: center; padding: 0 44px; gap: 34px; }
+  .num { flex: none; width: 120px; height: 120px; border-radius: 50%; background: var(--navy); color: #fff; font-weight: 700; font-size: 72px; display: flex; align-items: center; justify-content: center; }
+  .num.g { background: var(--green); color: var(--navy-deep); }
+  .step p { color: var(--navy); font-weight: 700; font-size: 70px; line-height: 1.15; }
+
+  /* footer */
+  .foot-inner { position: absolute; left: var(--mx); right: var(--mx); top: 0; bottom: 0; padding: 50px 0 115px; display: flex; align-items: center; justify-content: space-between; }
+  .label { color: var(--green); font-weight: 700; font-size: 54px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; }
+  .where .big { color: #fff; font-weight: 700; font-size: 108px; line-height: 1.1; }
+  .where .addr { color: #fff; font-weight: 400; font-size: 58px; line-height: 1.3; margin-top: 8px; }
+  .call .num-big { color: #fff; font-weight: 700; font-size: 150px; line-height: 1.05; letter-spacing: .01em; }
+  .sign { text-align: right; }
+  .sign .cert { color: #fff; font-weight: 500; font-size: 54px; letter-spacing: .14em; text-transform: uppercase; }
+  .sign .tag { color: #fff; font-weight: 700; font-size: 150px; line-height: 1.05; }
+  .sign .tag span { color: var(--green); }
+</style>
+</head>
+<body>
+<div class="tarp">
+
+  <div class="band top">
+    <img class="logo" src="../../brand/logos/signage/medsource-landscape-sticker.svg" alt="MedSource Medical Supplies &amp; Equipment">
+    <div class="branch">
+      <div class="kicker">Now at our</div>
+      <div class="name">Sta. Lucia Mall <span class="name2">Branch</span></div>
+    </div>
+  </div>
+
+  <div class="band hero">
+    <div class="hero-left">
+      <div class="pill">Now accepting</div>
+      <div class="title">DSWD<br>Guarantee Letters</div>
+    </div>
+    <div class="hero-right">
+      <div class="ask">Kailangan ng quotation para sa DSWD application mo?</div>
+      <div class="cta">Kami na ang bahala.</div>
+      <div class="tiles">
+        <div class="tile">Wheelchairs</div>
+        <div class="tile">Medicines</div>
+        <div class="tile">Diagnostics</div>
+        <div class="tile">First aid</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="band stripe1"></div>
+
+  <div class="band steps">
+    <div class="steps-label">How it<br>works</div>
+    <div class="step-row">
+      <div class="step"><div class="num">1</div><p>Get your quotation from us</p></div>
+      <div class="step"><div class="num">2</div><p>Submit it with your DSWD application</p></div>
+      <div class="step"><div class="num g">3</div><p>Claim your items with your Guarantee Letter</p></div>
+    </div>
+  </div>
+
+  <div class="band stripe2"></div>
+
+  <div class="band foot">
+    <div class="foot-inner">
+      <div class="where">
+        <div class="label">Visit or message us</div>
+        <div class="big">MedSource · Sta. Lucia Mall</div>
+        <div class="addr">Felix Ave. cor. Marcos Hwy, Cainta, Rizal</div>
+      </div>
+      <div class="call">
+        <div class="label">Call / text</div>
+        <div class="num-big">0967 325 3555</div>
+      </div>
+      <div class="sign">
+        <div class="cert">Certified</div>
+        <div class="tag">#Med<span>Mura</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
